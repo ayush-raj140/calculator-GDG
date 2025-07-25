@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="calculator-container neumorphic">
+    <!-- For top bar -->
+    <div class="top-bar">
+      <div class="toggles">
+        <label class="toggle-label">
+          <input type="checkbox" id="modeToggle" />
+          Scientific Mode
+        </label>
+        <label class="toggle-label">
+          <input type="checkbox" id="themeToggle" />
+          Light Mode
+        </label>
+      </div>
+    </div>
+
+    <!-- For display & history button -->
+    <div class="display-row">
+      <input type="text" id="display" class="display neumorphic-inset" readonly />
+      <button id="historyBtn" class="neumorphic-btn">History</button>
+    </div>
+
+    <!-- For calculator buttons -->
+    <div class="buttons simple-mode" id="buttonContainer">
+      <!-- Buttons added by JS -->
+    </div>
+
+    <!-- For history panel -->
+    <div class="history-panel neumorphic-inset" id="historyPanel" style="display: none;">
+      <div class="history-header">
+        <h3>History</h3>
+        <button id="clearHistory" class="neumorphic-btn small">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
