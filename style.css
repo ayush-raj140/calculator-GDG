@@ -1,0 +1,135 @@
+body.dark {
+  --bg-color: #f0f0f3;
+  --text-color: #0b4d15;
+  --btn-bg: #e0e0e0;
+  --shadow-light: #ffffff;;
+  --shadow-dark: #a3b1c6;
+  --accent: orange;
+}
+:root {
+  --bg-color: #1e1e2f;
+  --text-color: #00ffae;
+  --btn-bg: #2e2e3e;
+  --shadow-light: #262638;
+  --shadow-dark: #141421;
+  --accent: orange;
+}
+
+  
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+  padding: 2rem;
+}
+
+.calculator-container {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 25px;
+  padding: 20px;
+  background: var(--bg-color);
+  box-shadow: inset 5px 5px 15px var(--shadow-dark),
+              inset -5px -5px 15px var(--shadow-light);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggles {
+  display: flex;
+  gap: 1rem;
+}
+
+.toggle-label {
+  font-size: 0.9rem;
+}
+
+.display-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.display {
+  flex: 1;
+  height: 50px;
+  font-size: 1.5rem;
+  padding: 0 15px;
+  border: none;
+  border-radius: 12px;
+  background: var(--btn-bg);
+  box-shadow: inset 5px 5px 10px var(--shadow-dark),
+              inset -5px -5px 10px var(--shadow-light);
+  color: var(--text-color);
+  margin-right: 10px;
+}
+
+.neumorphic-btn {
+  padding: 10px 15px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  font-weight: bold;
+  box-shadow: 4px 4px 10px #aaa;
+  cursor: pointer;
+}
+
+.neumorphic-btn.small {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttons button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.2rem;
+  background: var(--btn-bg);
+  color: var(--text-color);
+  box-shadow: 8px 8px 15px var(--shadow-dark),
+              -8px -8px 15px var(--shadow-light);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.buttons button:active {
+  box-shadow: inset 5px 5px 10px var(--shadow-dark),
+              inset -5px -5px 10px var(--shadow-light);
+}
+
+.history-panel {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background: var(--btn-bg);
+  color: var(--text-color);
+  box-shadow: inset 5px 5px 10px var(--shadow-dark),
+              inset -5px -5px 10px var(--shadow-light);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#historyList {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
